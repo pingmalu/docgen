@@ -1,4 +1,4 @@
-module github.com/thedevsaddam/docgen
+module github.com/pingmalu/docgen
 
 go 1.12
 
