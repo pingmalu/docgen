@@ -1,65 +1,135 @@
-body{
+body {
 	color: #555555 !important;
 	letter-spacing: 0.25px !important;
 }
+
 .panel-default>.panel-heading {
-    color: #333;
-    background-color: #ffffff;
-    border-color: #efefef;
+	color: #333;
+	background-color: #ffffff;
+	border-color: #efefef;
 }
-.request-item .panel-title{
+
+.request-item .panel-title {
 	font-size: 12px !important;
 }
-.panel-title .glyphicon{
+
+.panel-title .glyphicon {
 	font-size: 12px;
 	font-weight: bold;
 }
-.collection-intro{
+
+.collection-intro {
 	padding-bottom: 10px !important;
 }
-ul{
+
+ul {
 	list-style: none;
 }
-ul li{
+
+ul li {
 	margin-left: -30px;
 	line-height: 16pt;
 }
-ul li .endpoint_menu{
+
+ul li .endpoint_menu {
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
-ul li .endpoint_menu:hover{
+
+ul li .endpoint_menu:hover {
 	margin-left: 5px;
 	font-weight: bolder;
 }
-a{
+
+a {
 	text-decoration: none !important;
 }
-.request-method{
+
+.request-method {
 	padding: 4px;
 }
-.border-success{
+
+.border-success {
 	border: 1px solid #3c763d;
 }
-.border-info{
+
+.border-info {
 	border: 1px solid #337ab7;
 }
-.border-warning{
+
+.border-warning {
 	border: 1px solid #f0ad4e;
 }
-.border-danger{
+
+.border-danger {
 	border: 1px solid #a94442;
 }
-pre {outline: 1px solid #ffffff; padding: 5px; margin: 5px; }
-.string { color: #16a085; }
-.number { color: #f39c12; }
-.boolean { color: #2980b9; }
-.null { color: magenta; }
-.key { color: #e74c3c; }
-.null { color: #8e44ad; }
-.love-color{
+
+pre {
+	outline: 1px solid #ffffff;
+	padding: 5px;
+	margin: 5px;
+}
+
+.string {
+	color: #16a085;
+}
+
+.number {
+	color: #f39c12;
+}
+
+.boolean {
+	color: #2980b9;
+}
+
+.null {
+	color: magenta;
+}
+
+.key {
+	color: #e74c3c;
+}
+
+.null {
+	color: #8e44ad;
+}
+
+.love-color {
 	color: #c0392b;
 	font-weight: bold;
+}
+
+.malu_create_at {
+	color: #bcbcbc;
+	font-size: 12px;
+}
+
+span.malu_url {
+    background: #f4f4f4;
+    line-height: 24px;
+    border: 1px solid #d4d4d4;
+    color: #282828;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 4px 8px;
+    word-break: break-all;
+    width: 100%;
+    display: block;
+    margin: 10px 0px;
+}
+
+.malu-not-move {
+    top: 0;
+    width: 20%;
+    min-width: 280px;
+    position: fixed;
+    position: sticky;
+    position: -webkit-sticky;
+    overflow: auto;
+    float: left;
+    padding: 16px 16px 0 0;
+    height: 100vh;
 }

@@ -31,7 +31,7 @@
         <div class="row">
             <!-- introduction -->
             <div class="col-md-12 collection-intro">
-                <h3>@{{ .Data.Info.Name }}@</h3>
+                <h3><a href="./">@{{ .Data.Info.Name }}@</a>  <span class="malu_create_at">@{{date_time}}@</span> </h3>
                 <p>
                     @{{ .Data.Info.Description | markdown | html }}@
                 </p>
@@ -39,7 +39,7 @@
             <!-- end introduction -->
             <div class="col-md-12">
                 <!-- left sidebar index -->
-                <div class="col-md-3">
+                <div class="col-md-3 malu-not-move">
                     <ul>
                         @{{ range $index, $c := .Data.Collections }}@
                         <li>
@@ -94,6 +94,7 @@
                                         </div>
                                         <div id="collapse-@{{ $d.Name | snake }}@-@{{ $item.Name | snake }}@" class="panel-collapse collapse">
                                             <div class="panel-body">
+                                                <span class="malu_url">@{{ $item.Request.URL.Raw | trimQueryParams}}@</span>
                                                 @{{ if $item.Request.Description }}@
                                                 <h5 class="label label-default">Description</h5>
                                                 <br>

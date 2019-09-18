@@ -12,5 +12,6 @@ require (
 	github.com/tdewolff/minify v2.3.4+incompatible
 	github.com/tdewolff/parse v2.3.2+incompatible // indirect
 	github.com/tdewolff/test v1.0.3 // indirect
+	golang.org/x/tools v0.0.0-20190917215024-905c8ffbfa41 // indirect
 	gopkg.in/russross/blackfriday.v2 v2.0.0
 )
