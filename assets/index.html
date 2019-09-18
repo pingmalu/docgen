@@ -30,7 +30,7 @@
         <div class="container-fluid">
         <div class="row">
             <!-- introduction -->
-            <div class="col-md-12 collection-intro">
+            <div class="col-md-12 collection-intro malu-title">
                 <h3><a href="./">@{{ .Data.Info.Name }}@</a>  <span class="malu_create_at">@{{date_time}}@</span> </h3>
                 <p>
                     @{{ .Data.Info.Description | markdown | html }}@
@@ -55,7 +55,7 @@
                 </div>
                 <!-- end left sidebar index -->
                 <!-- main div to display items -->
-                <div class="col-md-9">
+                <div class="col-md-9 malu-md9">
                     <!-- directory -->
                     @{{ range $di, $d := .Data.Collections }}@
                         <div class="panel panel-default">

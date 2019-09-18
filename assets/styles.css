@@ -133,3 +133,15 @@ span.malu_url {
     padding: 16px 16px 0 0;
     height: 100vh;
 }
+
+.malu-title {
+    background-color: #282828;
+}
+
+.malu-title a {
+    color: aliceblue;
+}
+
+.malu-md9 {
+    margin-top: 10px;
+}
