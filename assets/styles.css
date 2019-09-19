@@ -1,6 +1,7 @@
 body {
 	color: #555555 !important;
 	letter-spacing: 0.25px !important;
+	font-family: "Open Sans", sans-serif;
 }
 
 .panel-default>.panel-heading {
@@ -28,7 +29,7 @@ ul {
 
 ul li {
 	margin-left: -30px;
-	line-height: 16pt;
+	line-height: 18pt;
 }
 
 ul li .endpoint_menu {
@@ -107,41 +108,45 @@ pre {
 	font-size: 12px;
 }
 
+span.badge {
+	background-color: #6f6f6f !important;
+}
+
 span.malu_url {
-    background: #f4f4f4;
-    line-height: 24px;
-    border: 1px solid #d4d4d4;
-    color: #282828;
-    border-radius: 3px;
-    font-size: 14px;
-    padding: 4px 8px;
-    word-break: break-all;
-    width: 100%;
-    display: block;
-    margin: 10px 0px;
+	background: #f4f4f4;
+	line-height: 24px;
+	border: 1px solid #d4d4d4;
+	color: #282828;
+	border-radius: 3px;
+	font-size: 14px;
+	padding: 4px 8px;
+	word-break: break-all;
+	width: 100%;
+	display: block;
+	margin: 10px 0px;
 }
 
 .malu-not-move {
-    top: 0;
-    width: 20%;
-    min-width: 280px;
-    position: fixed;
-    position: sticky;
-    position: -webkit-sticky;
-    overflow: auto;
-    float: left;
-    padding: 16px 16px 0 0;
-    height: 100vh;
+	top: 0;
+	width: 20%;
+	min-width: 280px;
+	position: fixed;
+	position: sticky;
+	position: -webkit-sticky;
+	overflow: auto;
+	float: left;
+	padding: 16px 16px 0 0;
+	height: 100vh;
 }
 
 .malu-title {
-    background-color: #282828;
+	background-color: #282828;
 }
 
 .malu-title a {
-    color: aliceblue;
+	color: aliceblue;
 }
 
 .malu-md9 {
-    margin-top: 10px;
+	margin-top: 10px;
 }

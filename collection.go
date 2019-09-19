@@ -27,6 +27,7 @@ type (
 		Value       string `json:"value"`
 		Name        string `json:"name"`
 		Description string `json:"description"`
+		Disabled    bool `json:"disabled"`
 	}
 
 	// Field describes a field of request
@@ -35,6 +36,7 @@ type (
 		Value       string `json:"value"`
 		Description string `json:"description"`
 		Type        string `json:"type"`
+		Disabled    bool `json:"disabled"`
 	}
 
 	// URL describes URL of the request

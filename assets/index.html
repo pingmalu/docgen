@@ -80,11 +80,11 @@
                                             </small>
                                             <a class="text-@{{ $item.Request.Method | color }}@" data-toggle="collapse" data-parent="#accordion-@{{ $d.Name | snake }}@" href="#collapse-@{{ $d.Name | snake }}@-@{{ $item.Name | snake }}@">
                                                 <h4 class="panel-title">
-                                                    <span class="glyphicon glyphicon-plus"></span>
+                                                    <span class="glyphicon glyphicon-plus"></span>&nbsp;
                                                     @{{ if $item.Name }}@
-                                                        <strong>@{{ $item.Name }}@</strong> &nbsp;|&nbsp;
+                                                        <strong>@{{ $item.Name }}@</strong> &nbsp;
                                                     @{{ end }}@
-                                                    <strong class="request-method border-@{{ $item.Request.Method | color }}@">
+                                                    <strong class="request-method">
                                                     @{{ $item.Request.Method }}@
                                                     </strong>
                                                     &nbsp;
@@ -115,11 +115,13 @@
                                                     </thead>
                                                     <tbody>
                                                         @{{ range $ih, $h := $item.Request.Headers }}@
-                                                            <tr>
-                                                                <td>@{{ $h.Key }}@</td>
-                                                                <td>@{{ $h.Value }}@</td>
-                                                                <td>@{{ $h.Description | markdown | html }}@</td>
-                                                            </tr>
+                                                            @{{ if ne $h.Disabled true }}@
+                                                                <tr>
+                                                                    <td>@{{ $h.Key }}@</td>
+                                                                    <td>@{{ $h.Value }}@</td>
+                                                                    <td>@{{ $h.Description | markdown | html }}@</td>
+                                                                </tr>
+                                                            @{{ end }}@
                                                         @{{ end }}@
                                                     </tbody>
                                                 </table>
@@ -136,11 +138,13 @@
                                                     </thead>
                                                     <tbody>
                                                         @{{ range $iq, $q := $item.Request.URL.Query }}@
-                                                            <tr>
-                                                                <td>@{{ $q.Key }}@</td>
-                                                                <td>@{{ $q.Value }}@</td>
-                                                                <td>@{{ $q.Description | markdown | html }}@</td>
-                                                            </tr>
+                                                            @{{ if ne $q.Disabled true }}@
+                                                                <tr>
+                                                                    <td>@{{ $q.Key }}@</td>
+                                                                    <td>@{{ $q.Value }}@</td>
+                                                                    <td>@{{ $q.Description | markdown | html }}@</td>
+                                                                </tr>
+                                                            @{{ end }}@
                                                         @{{ end }}@
                                                     </tbody>
                                                 </table>
@@ -193,11 +197,13 @@
                                                             </thead>
                                                             <tbody>
                                                                 @{{ range $if, $f := $item.Request.Body.FormData }}@
-                                                                <tr>
-                                                                    <td>@{{ $f.Key }}@</td>
-                                                                    <td>@{{ $f.Value }}@</td>
-                                                                    <td>@{{ $f.Description | markdown | html }}@</td>
-                                                                </tr>
+                                                                    @{{ if ne $f.Disabled true }}@
+                                                                    <tr>
+                                                                        <td>@{{ $f.Key }}@</td>
+                                                                        <td>@{{ $f.Value }}@</td>
+                                                                        <td>@{{ $f.Description | markdown | html }}@</td>
+                                                                    </tr>
+                                                                    @{{ end }}@
                                                                 @{{ end }}@
                                                             </tbody>
                                                         </table>
